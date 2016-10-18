@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Феофилов](https://up.htmlacademy.ru/htmlcss/15/user/233524).
-* Наставник: [Анастасия Мусаэльян](https://vk.com/bevoice).
+* Наставник: [Анастасия Мусаэльян](https://up.htmlacademy.ru/htmlcss/15/user/124940).
 
 ---
 
