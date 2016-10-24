@@ -56,11 +56,129 @@
             <input class="filters__item filters__item--apartment" type="checkbox" name="apartment" id="apartment" value="apartment" checked>
             <label class="filters__caption filters__caption--apartment" for="apartment">Аппартаменты</label>
           </fieldset>
-          <fieldset class="filters__type filters__type--">
-
+          <fieldset class="filters__type filters__type--price">
+            <legend class="filters__price">Стоимость в сутки ():</legend>
+            <div class="price-wrapper">
+              <input class="filters__price filters__price--min" type="text" name="min-price" value="От 0">
+              <input class="filters__price filters__price--max" type="text" name="max-price" value="До 3000">
+            </div>
+            <div class="filters__scale">
+              <div class="filters__band">
+                <!-- здесь будет полоска -->
+              </div>
+            </div>
+            <div class="filters__sliders">
+              <a class="filters__slider filters__slider--left" href="#"></a>
+              <a class="filters__slider filters__slider--right" href="#"></a>
+            </div>
+            <a class="filters__btn" href="#">Показать</a>
           </fieldset>
         </form>
       </aside>
+
+      <section class="results">
+        <div class="results__filters">
+          <div class="results__quantity">Найдено: 3</div>
+          <div class="results__sorting">
+            <ul class="results__list">
+              <li>Сортировка</li>
+              <li class="active">
+                <a href="#">По цене:</a>
+              </li>
+              <li>
+                <a href="#">По типу:</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу:</a>
+              </li>
+            </ul>
+          </div>
+          <div class="results__arrow">
+            <a class="results__arrow--up active" href="#">По возрастанию</a>
+            <a class="results__arrow--down" href="#">По убыванию</a>
+          </div>
+        </div>
+        <div class="results__items">
+          <div class="results__item">
+            <div class="results__picture">
+              <img src="img/amara.jpg" width="150" height="100" alt="Amara resort &amp; spa"/>
+            </div>
+            <div class="results__description">
+              <h2 class="results__title">Amara resort &amp; spa</h2>
+              <p class="results__house">Гостиница</p>
+              <p class="results__price">От 3500 р.</p>
+              <a class="results__btn results__btn--more" href="#">Подробнее</a>
+              <a class="results__btn results__btn--reserve" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="results__rating">
+            <div class="stars-wrapper">
+              <ul class="results__stars">
+                <li class="results__star"></li>
+                <li class="results__star"></li>
+                <li class="results__star"></li>
+                <li class="results__star"></li>
+              </ul>
+            </div>
+            <div class="results__points">
+              Рейтинг: 8,5
+            </div>
+          </div>
+        </div>
+
+        <div class="results__items">
+          <div class="results__item">
+            <div class="results__picture">
+              <img src="img/desert.jpg" width="150" height="100" alt="Desert quail inn"/>
+            </div>
+            <div class="results__description">
+              <h2 class="results__title">Desert quail inn</h2>
+              <p class="results__house">Мотель</p>
+              <p class="results__price">От 2000 р.</p>
+              <a class="results__btn results__btn--more" href="#">Подробнее</a>
+              <a class="results__btn results__btn--reserve" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="results__rating">
+            <div class="stars-wrapper">
+              <ul class="results__stars">
+                <li class="results__star"></li>
+                <li class="results__star"></li>
+              </ul>
+            </div>
+            <div class="results__points">
+              Рейтинг: 8,9
+            </div>
+          </div>
+        </div>
+
+        <div class="results__items">
+          <div class="results__item">
+            <div class="results__picture">
+              <img src="img/diablo.jpg" width="150" height="100" alt="Villas at poco diablo"/>
+            </div>
+            <div class="results__description">
+              <h2 class="results__title">Villas at poco diablo</h2>
+              <p class="results__house">Аппартаменты</p>
+              <p class="results__price">От 4000 р.</p>
+              <a class="results__btn results__btn--more" href="#">Подробнее</a>
+              <a class="results__btn results__btn--reserve" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="results__rating">
+            <div class="stars-wrapper">
+              <ul class="results__stars">
+                <li class="results__star"></li>
+                <li class="results__star"></li>
+                <li class="results__star"></li>
+              </ul>
+            </div>
+            <div class="results__points">
+              Рейтинг: 9,2
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
 
