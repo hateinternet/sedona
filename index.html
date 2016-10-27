@@ -5,165 +5,144 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <header class="page-header">
-      <div class="header-wrapper">
-
-        <!-- Не знаю в каком порядке впихнуть логотип, ведь на макете он посередине -->
+    <div class="wrapper">
+      <header class="page-header">
         <div class="logo">
-          <a class="logo__link" href="index.html">
+          <a class="logo__link">
             <img class="logo__picture" src="img/logo.png" width="150" height="100" alt="Логотип Седона">
           </a>
         </div>
-
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Информация</a>
+              <a class="navigation__link" href="#">Информация</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Фото и видео</a>
+              <a class="navigation__link" href="#">Фото и видео</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Карта штата</a>
+              <a class="navigation__link" href="#">Карта штата</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Гостиницы</a>
+              <a class="navigation__link" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
-
-      </div>
-    </header>
-
-    <main class="content">
-
-      <!-- Та же история, не знаю что делать с "белой штукой" снизу фона. Строить его буду с помощью CSS?
-      или оно будет вырезаться с помощью фотошопа?-->
+      </header>
       <div class="promo">
         <img class="promo__picture" src="img/promo.png" width="400" height="400" alt="Добро пожаловать в Седону">
       </div>
-
-      <section class="advantages">
-        <div class="title-wrapper">
-          <h1 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
-        <div class="advantages__items advantages__items--town">
-          <div class="advantages__item advantages__item--white">
-            <h2 class="advantages__title">Настоящий городок</h2>
-            <p class="advantages__number">-№1-</p>
-            <p class="advantages__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      <article class="advantages">
+        <header class="header-advantages">
+          <h1 class="header-advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="header-advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </header>
+        <div class="advantages__row advantages__row--blue">
+          <div class="advantage">
+            <h2 class="advantage__title">Настоящий городок</h2>
+            <div class="advantage__number">-№1-</div>
+            <p class="advantage__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="advantages__pictures advantages__pictures--town" src="img/town.jpg" width="800" height="250" alt="Настоящий городок">
-        </div>
-
-        <div class="advice">
-          <div class="advice__item advice__item--house">
-            <h2 class="advice__title">Жилье</h2>
-            <p class="advice_description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-          <div class="advice__item advice__item--food">
-            <h2 class="advice__title">Еда</h2>
-            <p class="advice_description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-          <div class="advice__item advice__item--souvenirs">
-            <h2 class="advice__title">Сувениры</h2>
-            <p class="advice_description">Не только китайского, но и местного производства!</p>
+          <div class="advantage advantage--picture">
+            <img class="advantage__picture" src="img/town.jpg" width="800" height="250" alt="Настоящий городок">
           </div>
         </div>
-
-        <div class="advantages__items advantages__items--bridge">
-          <img class="advantages__pictures advantages__pictures--bridge" src="img/bridge.jpg" width="800" height="250" alt="Мост дьявола">
-          <div class="advantages__item advantages__item--white">
-            <h2 class="advantages__title">Там есть мост дьявола</h2>
-            <p class="advantages__number">-№2-</p>
-            <p class="advantages__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="advantages__row">
+          <div class="advantage advantage-icon advantage-icon--house">
+            <h2 class="advantage__title">Жилье</h2>
+            <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="advantage advantage-icon advantage-icon--food">
+            <h2 class="advantage__title">Еда</h2>
+            <p class="advantage__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="advantage advantage-icon advantage-icon--souvenirs">
+            <h2 class="advantage__title">Сувениры</h2>
+            <p class="advantage__text">Не только китайского, но и местного производства!</p>
           </div>
         </div>
-
-        <div class="advantages__items">
-          <div class="advantages__item advantages__item--black">
-            <h2 class="advantages__title">Небольшая площадь</h2>
-            <p class="advantages__number">-№3-</p>
-            <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+        <div class="advantages__row advantages__row--blue">
+          <div class="advantage advantage--picture">
+            <img class="advantage__picture" src="img/bridge.jpg" width="800" height="250" alt="Мост дьявола">
           </div>
-          <div class="advantages__item advantages__item--black">
-            <h2 class="advantages__title">Красивая дорога</h2>
-            <p class="advantages__number">-№4-</p>
-            <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="advantages__item advantages__item--black">
-            <h2 class="advantages__title">Мало туристов</h2>
-            <p class="advantages__number">-№5-</p>
-            <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+          <div class="advantage">
+            <h2 class="advantage__title">Там есть мост дьявола</h2>
+            <div class="advantage__number">-№2-</div>
+            <p class="advantage__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-      </section>
-
-      <!-- Не очень придумал как вставить иконку календарика отдельным элементом, сделал ссылкой.
-      Как сделать так, чтобы лейбл при нажатии на подпись мы попадали не в поле, а в календарик? -->
-      <section class="booking">
-        <h2 class="booking__title">Заинтересовались?</h2>
-        <p class="booking__description">
+        <div class="advantages__row">
+          <div class="advantage">
+            <h2 class="advantage__title">Небольшая площадь</h2>
+            <div class="advantage__number">-№3-</div>
+            <p class="advantage__text">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="advantage">
+            <h2 class="advantage__title">Красивая дорога</h2>
+            <div class="advantage__number">-№4-</div>
+            <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="advantage">
+            <h2 class="advantage__title">Мало туристов</h2>
+            <div class="advantage__number">-№5-</div>
+            <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+      </article>
+      <div class="booking">
+        <h3 class="booking__title">Заинтересовались?</h3>
+        <div class="booking__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
+        </div>
         <a class="booking__btn" href="#">Поиск гостиницы в Седоне</a>
-        <form class="booking__form hidden" action="/" method="post">
-          <div class="booking__field booking__field--calendar">
-            <label for="date-arrive">
-              Дата заезда:
-              <input class="booking__date booking__date--arrive" type="text" name="date-arrive" id="date-arrive" value="24 апреля 2016">
-              <a class="booking__calendar" href="#"></a>
-            </label>
+        <div class="map-container">
+          <div class="map">
+            <!-- не забыть картинку и фон -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d569612.2038570665!2d-112.0704902812948!3d34.852149575820434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e1!3m2!1sru!2sru!4v1477234713655" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-
-          <div class="booking__field booking__field--calendar">
-            <label for="date-departure">
-              Дата выезда:
-              <input class="booking__date booking__date--departure" type="text" name="date-departure" id="date-departure" value="4 апреля 2016">
-              <a class="booking__calendar" href="#"></a>
-            </label>
+          <div class="form">
+            <form class="booking__form hidden" action="/" method="post">
+              <div class="booking__field booking__field--row">
+                <label for="date-arrive">Дата заезда:</label>
+                <input class="booking__date booking__date--arrive" type="text" name="date-arrive" id="date-arrive" placeholder="24 апреля 2016">
+                <button class="booking__calendar" type="button"></button>
+              </div>
+              <div class="booking__field booking__field--row">
+                <label for="date-departure">Дата выезда:</label>
+                <input class="booking__date booking__date--departure" type="text" name="date-departure" id="date-departure" placeholder="4 апреля 2016">
+                <button class="booking__calendar" type="button"></button>
+              </div>
+              <div class="booking__field booking__field--half-row">
+                <label for="booking-adults">Взрослые:</label>
+                <button class="decrement" type="button">-</button>
+                <input class="booking__quantity booking__adults" type="text" name="booking-adults" id="booking-adults" placeholder="2">
+                <button class="increment" type="button">+</button>
+              </div>
+              <div class="booking__field booking__field--half-row">
+                <label for="booking-children">Дети:</label>
+                <button class="decrement" type="button">-</button>
+                <input class="booking__quantity booking__children" type="text" name="booking-children" id="booking-children" placeholder="0">
+                <button class="increment" type="button">+</button>
+              </div>
+              <button class="booking__search-btn" type="submit">Найти</button>
+            </form>
           </div>
-
-          <div class="booking__field booking__field--counter">
-            <label for="booking-adults">Взрослые:</label>
-            <a class="decrement" href="#">-</a>
-            <input class="booking__quantity booking__adults" type="text" name="booking-adults" id="booking-adults" value="2">
-            <a class="increment" href="#">+</a>
-          </div>
-
-          <div class="booking__field booking__field--counter">
-            <label for="booking-children">Дети:</label>
-            <a class="decrement" href="#">-</a>
-            <input class="booking__quantity booking__children" type="text" name="booking-children" id="booking-children" value="0">
-            <a class="increment" href="#">+</a>
-          </div>
-        </form>
-
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d569612.2038570665!2d-112.0704902812948!3d34.852149575820434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e1!3m2!1sru!2sru!4v1477234713655" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="footer-wrapper">
-        <div class="hashtag">
-          <p class="hashtag__text">#visitsedona</p>
-        </div>
-        <div class="social">
-          <a class="social__link social__link--twitter" href="#">Twitter</a>
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-          <a class="social__link social__link--youtube" href="#">YouTube</a>
-        </div>
-        <div class="copyright">
-          <p class="copyright__creator">Website by</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/">
-            <img class="copyright__picture" src="img/academy.png" width="100" height="100" alt="Html-академия"/>
-          </a>
+          <footer class="page-footer page-footer--index-page">
+            <div class="hashtag">
+              <a class="hashtag__text" href="#">#visitsedona</a>
+            </div>
+            <div class="social-btns">
+              <a class="social-btn social-btn--twitter" href="#">Twitter</a>
+              <a class="social-btn social-btn--facebook" href="#">Facebook</a>
+              <a class="social-btn social-btn--youtube" href="#">YouTube</a>
+            </div>
+            <div class="copyright">
+              Website by
+              <a class="copyright__link" href="https://htmlacademy.ru/"></a>
+            </div>
+          </footer>
         </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
