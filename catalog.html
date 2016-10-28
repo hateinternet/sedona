@@ -24,7 +24,7 @@
               <a class="navigation__link" href="#">Карта штата</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link--activediv">Гостиницы</a>
+              <a class="navigation__link--active">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -33,21 +33,33 @@
         <form class="filters__form" action="/" method="get">
           <fieldset class="filters__column">
             <legend class="filters__title">Инфраструктура:</legend>
-            <input class="filters__item" type="checkbox" name="pool" id="pool" value="pool" checked>
-            <label class="filters__caption" for="pool">Бассейн</label>
-            <input class="filters__item" type="checkbox" name="parking" id="parking" value="parking">
-            <label class="filters__caption" for="parking">Парковка</label>
-            <input class="filters__item" type="checkbox" name="wifi" id="wifi" value="wifi">
-            <label class="filters__caption" for="wifi">Wi-Fi</label>
+            <div class="filters__list-item">
+              <input class="filters__item" type="checkbox" name="pool" id="pool" value="pool" checked>
+              <label class="filters__caption" for="pool">Бассейн</label>
+            </div>
+            <div class="filters__list-item">
+              <input class="filters__item" type="checkbox" name="parking" id="parking" value="parking">
+              <label class="filters__caption" for="parking">Парковка</label>
+            </div>
+            <div class="filters__list-item">
+              <input class="filters__item" type="checkbox" name="wifi" id="wifi" value="wifi">
+              <label class="filters__caption" for="wifi">Wi-Fi</label>
+            </div>
           </fieldset>
           <fieldset class="filters__column">
             <legend class="filters__title">Тип жилья:</legend>
-            <input class="filters__item" type="checkbox" name="hotel" id="hotel" value="hotel" checked>
-            <label class="filters__caption" for="hotel">Гостиница</label>
-            <input class="filters__item" type="checkbox" name="motel" id="motel" value="motel" checked>
-            <label class="filters__caption" for="motel">Мотель</label>
-            <input class="filters__item" type="checkbox" name="apartment" id="apartment" value="apartment" checked>
-            <label class="filters__caption" for="apartment">Аппартаменты</label>
+            <div class="filters__list-item">
+              <input class="filters__item" type="checkbox" name="hotel" id="hotel" value="hotel" checked>
+              <label class="filters__caption" for="hotel">Гостиница</label>
+            </div>
+            <div class="filters__list-item">
+              <input class="filters__item" type="checkbox" name="motel" id="motel" value="motel" checked>
+              <label class="filters__caption" for="motel">Мотель</label>
+            </div>
+            <div class="filters__list-item">
+              <input class="filters__item" type="checkbox" name="apartment" id="apartment" value="apartment" checked>
+              <label class="filters__caption" for="apartment">Аппартаменты</label>
+            </div>
           </fieldset>
           <!-- цена будет хорошо после скринкаста  -->
           <fieldset class="filters__column filters__column--prices">
@@ -83,8 +95,8 @@
               <a href="#">По рейтингу:</a>
             </li>
           </ul>
-        <div class="results__arrow">
-          <a class="results__arrow--up active" href="#">По возрастанию</a>
+        <div class="results__arrows">
+          <a class="results__arrow--up results__arrow--active" href="#">По возрастанию</a>
           <a class="results__arrow--down" href="#">По убыванию</a>
         </div>
       </div>
