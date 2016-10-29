@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
         <div class="logo">
-          <a class="logo__link">
-            <img class="logo__picture" src="img/logo.png" width="150" height="100" alt="Логотип Седона">
+          <a class="logo__link" href="index.html">
+            <img class="logo__picture" src="img/logo.png" width="138" height="70" alt="Логотип Седона">
           </a>
         </div>
         <nav class="navigation">
@@ -24,7 +25,7 @@
               <a class="navigation__link" href="#">Карта штата</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link--active">Гостиницы</a>
+              <a class="navigation__link navigation__link--active">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -33,30 +34,30 @@
         <form class="filters__form" action="/" method="get">
           <fieldset class="filters__column">
             <legend class="filters__title">Инфраструктура:</legend>
-            <div class="filters__list-item">
+            <div class="filters__row">
               <input class="filters__item" type="checkbox" name="pool" id="pool" value="pool" checked>
               <label class="filters__caption" for="pool">Бассейн</label>
             </div>
-            <div class="filters__list-item">
+            <div class="filters__row">
               <input class="filters__item" type="checkbox" name="parking" id="parking" value="parking">
               <label class="filters__caption" for="parking">Парковка</label>
             </div>
-            <div class="filters__list-item">
+            <div class="filters__row">
               <input class="filters__item" type="checkbox" name="wifi" id="wifi" value="wifi">
               <label class="filters__caption" for="wifi">Wi-Fi</label>
             </div>
           </fieldset>
           <fieldset class="filters__column">
             <legend class="filters__title">Тип жилья:</legend>
-            <div class="filters__list-item">
+            <div class="filters__row">
               <input class="filters__item" type="checkbox" name="hotel" id="hotel" value="hotel" checked>
               <label class="filters__caption" for="hotel">Гостиница</label>
             </div>
-            <div class="filters__list-item">
+            <div class="filters__row">
               <input class="filters__item" type="checkbox" name="motel" id="motel" value="motel" checked>
               <label class="filters__caption" for="motel">Мотель</label>
             </div>
-            <div class="filters__list-item">
+            <div class="filters__row">
               <input class="filters__item" type="checkbox" name="apartment" id="apartment" value="apartment" checked>
               <label class="filters__caption" for="apartment">Аппартаменты</label>
             </div>
@@ -96,13 +97,15 @@
             </li>
           </ul>
         <div class="results__arrows">
-          <a class="results__arrow--up results__arrow--active" href="#">По возрастанию</a>
-          <a class="results__arrow--down" href="#">По убыванию</a>
+          <a class="results__arrow results__arrow--up results__arrow--active" href="#">По возрастанию</a>
+          <a class="results__arrow results__arrow--down" href="#">По убыванию</a>
+
+          <link rel="stylesheet" href="css/style.css">
         </div>
       </div>
       <section class="hotel">
         <div class="hotel__picture">
-          <img src="img/amara.jpg" width="150" height="100" alt="Amara resort &amp; spa"/>
+          <img src="img/amara.jpg" width="135" height="90" alt="Amara resort &amp; spa"/>
         </div>
         <div class="hotel__description">
           <a class="hotel__title" href="#">Amara resort &amp; spa</a>
@@ -129,7 +132,7 @@
       </section>
       <section class="hotel">
         <div class="hotel__picture">
-          <img src="img/desert.jpg" width="150" height="100" alt="Desert quail inn"/>
+          <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn"/>
         </div>
         <div class="hotel__description">
           <a class="hotel__title" href="#">Desert quail inn</a>
@@ -154,7 +157,7 @@
       </section>
       <section class="hotel">
         <div class="hotel__picture">
-          <img src="img/diablo.jpg" width="150" height="100" alt="Villas at poco diablo"/>
+          <img src="img/diablo.jpg" width="135" height="90" alt="Villas at poco diablo"/>
         </div>
         <div class="hotel__description">
           <a class="hotel__title" href="#">Villas at poco diablo</a>
