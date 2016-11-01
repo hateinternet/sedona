@@ -32,9 +32,10 @@ body {
 
 .logo {
   position: absolute;
-  left: 44%;
+  left: 50%;
 
   outline: 1px solid rgb(48, 147, 8);
+  transform: translateX(-50%);
 }
 
 .navigation {
@@ -51,8 +52,7 @@ body {
 
 .navigation__item {
   display: inline-block;
-  width: 20%;
-  min-height: 56px;
+  width: 240px;
 
   font-size: 14px;
   vertical-align: top;
@@ -62,11 +62,11 @@ body {
 }
 
 .navigation__item:nth-child(2) {
-  margin-right: 20%;
+  margin-right: 240px;
 }
 
 .promo {
-  min-height: 508px;
+  height: 508px;
 
   background-color: rgb(41, 5, 16);
 }
@@ -78,17 +78,19 @@ body {
 }
 
 .header-advantages {
-  min-height: 216px;
+  padding: 30px;
 
   outline: 1px solid rgb(80, 24, 159);
 }
 
 .advantages__row {
-  min-height: 256px;
-
   font-size: 0;
 
   outline: 1px solid rgb(125, 224, 250);
+}
+
+.advantages__row--blue {
+  height: 256px;
 }
 
 .advantage {
@@ -107,9 +109,12 @@ body {
   outline: 1px solid rgb(188, 196, 11);
 }
 
+.advantage__picture {
+  display: block;
+}
+
 .booking {
   width: 576px;
-  min-height: 291px;
   margin: 0 auto;
 
   outline: 1px solid rgb(188, 254, 247);
@@ -120,28 +125,43 @@ body {
   height: 86px;
 }
 
-.map {
-  min-height: 473px;
+.map-container {
+  position: relative;
+}
 
+.map {
   outline: 1px solid rgb(97, 44, 9);
 }
 
 .form {
-  width: 568px;
-  height: 395px;
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
 
+  width: 568px;
+
+  background-color: rgb(83, 172, 149);
   outline: 1px solid rgb(37, 91, 93);
+  transform: translateX(-50%);
 }
 
-.footer {
+.page-footer {
+  width: 1200px;
+
   font-size: 0;
+}
+
+.page-footer--index-page {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .page-footer > * {
   display: inline-block;
-  width: 33%;
-  min-height: 121px;
+  width: 400px;
 
   font-size: 14px;
   vertical-align: top;
@@ -150,51 +170,37 @@ body {
 }
 
 .filters {
-  min-height: 217px;
-
-  font-size: 0;
-
   outline: 1px solid rgb(153, 46, 124);
 }
 
 .filters__column {
-  display: inline-block;
-  width: 24%;
-
-  font-size: 14px;
-  vertical-align: top;
+  float: left;
+  width: 290px;
 
   border: none;
   outline: 1px dashed rgb(128, 19, 5);
 }
 
 .filters__column--prices {
-  margin-left: 21%;
+  float: right;
 }
 
 .results__filters {
-  min-height: 86px;
-
-  font-size: 0;
-
   outline: 1px solid rgb(179, 113, 89);
 }
 
 .results__filters > * {
-  display: inline-block;
-
-  font-size: 14px;
-  vertical-align: top;
+  float: left;
 
   outline: 1px dashed rgb(1, 14, 215);
 }
 
 .results__quantity {
-  width: 15%;
+  width: 180px;
 }
 
 .results__list {
-  width: 30%;
+  width: 350px;
   margin: 0;
   padding: 0;
 
@@ -211,34 +217,33 @@ body {
 }
 
 .results__arrows {
-  margin-left: 25%;
-  width: 30%;
+  float: right;
+  width: 350px;
 }
 
 .hotel {
-  font-size: 0;
-  min-height: 150px;
+  width: 1200px;
+
   outline: 1px solid rgb(194, 95, 203);
 }
 
 .hotel > * {
-  font-size: 14px;
-  display: inline-block;
-  vertical-align: top;
+  float: left;
+
   outline: 1px dashed rgb(145, 156, 96);
 }
 
 .hotel__picture {
-  width: 18%;
+  width: 200px;
 }
 
 .hotel__description {
-  width: 32%;
+  width: 390px;
 }
 
 .hotel__rating {
-  margin-left: 25%;
-  width: 25%;
+  float: right;
+  width: 300px;
 }
 
 .clearfix::after {
