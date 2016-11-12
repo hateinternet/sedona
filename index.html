@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -41,8 +43,8 @@
         <div class="advantages__row advantages__row--blue">
           <div class="advantage">
             <h2 class="advantage__title">Настоящий городок</h2>
-            <div class="advantage__number">-№1-</div>
-            <p class="advantage__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="advantage__number">— №1 —</div>
+            <p class="advantage__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantage advantage--picture">
             <img class="advantage__picture" src="img/town.jpg" width="800" height="256" alt="Настоящий городок">
@@ -68,24 +70,24 @@
           </div>
           <div class="advantage">
             <h2 class="advantage__title">Там есть мост дьявола</h2>
-            <div class="advantage__number">-№2-</div>
+            <div class="advantage__number">— №2 —</div>
             <p class="advantage__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
         <div class="advantages__row advantages__row--grey">
           <div class="advantage">
             <h2 class="advantage__title">Небольшая площадь</h2>
-            <div class="advantage__number">-№3-</div>
+            <div class="advantage__number">— №3 —</div>
             <p class="advantage__text">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="advantage">
             <h2 class="advantage__title">Красивая дорога</h2>
-            <div class="advantage__number">-№4-</div>
+            <div class="advantage__number">— №4 —</div>
             <p class="advantage__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="advantage">
             <h2 class="advantage__title">Мало туристов</h2>
-            <div class="advantage__number">-№5-</div>
+            <div class="advantage__number">— №5 —</div>
             <p class="advantage__text">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
@@ -93,17 +95,17 @@
       <div class="booking">
         <h3 class="booking__title">Заинтересовались?</h3>
         <div class="booking__description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
         </div>
-        <button class="booking__btn" type="button">Поиск гостиницы в Седоне</button>
+        <button class="booking__btn btn-brown" type="button">Поиск гостиницы в Седоне</button>
       </div>
       <div class="map-container">
         <div class="map">
-          <!-- не забыть картинку и фон -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d569612.2038570665!2d-112.0704902812948!3d34.852149575820434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e1!3m2!1sru!2sru!4v1477234713655" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417830.47199884435!2d-111.94623860103302!3d35.0992050240757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1478792427289" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="form">
-          <form class="booking__form hidden" action="/" method="post">
+          <form class="booking__form hidden clearfix" action="/" method="post">
             <div class="booking__field booking__field--row">
               <label for="date-arrive">Дата заезда:</label>
               <input class="booking__date booking__date--arrive" type="text" name="date-arrive" id="date-arrive" placeholder="24 апреля 2016">
@@ -111,22 +113,26 @@
             </div>
             <div class="booking__field booking__field--row">
               <label for="date-departure">Дата выезда:</label>
-              <input class="booking__date booking__date--departure" type="text" name="date-departure" id="date-departure" placeholder="4 апреля 2016">
+              <input class="booking__date booking__date--departure" type="text" name="date-departure" id="date-departure" placeholder="4 июля 2016">
               <button class="booking__calendar" type="button"></button>
             </div>
             <div class="booking__field booking__field--half-row">
               <label for="booking-adults">Взрослые:</label>
-              <button class="decrement" type="button">-</button>
-              <input class="booking__quantity booking__adults" type="text" name="booking-adults" id="booking-adults" placeholder="2">
-              <button class="increment" type="button">+</button>
+              <div class="quantity-container">
+                <button class="decrement counter-btn" type="button"></button>
+                <input class="booking__quantity booking__adults" type="text" name="booking-adults" id="booking-adults" placeholder="2">
+                <button class="increment counter-btn" type="button"></button>
+              </div>
             </div>
             <div class="booking__field booking__field--half-row">
-              <label for="booking-children">Дети:</label>
-              <button class="decrement" type="button">-</button>
-              <input class="booking__quantity booking__children" type="text" name="booking-children" id="booking-children" placeholder="0">
-              <button class="increment" type="button">+</button>
+              <label class="children-caption" for="booking-children">Дети:</label>
+              <div class="quantity-container">
+                <button class="decrement counter-btn" type="button"></button>
+                <input class="booking__quantity booking__children" type="text" name="booking-children" id="booking-children" placeholder="0">
+                <button class="increment counter-btn" type="button"></button>
+              </div>
             </div>
-            <button class="booking__search-btn" type="submit">Найти</button>
+            <button class="booking__search-btn btn-blue" type="submit">Найти</button>
           </form>
         </div>
         <footer class="page-footer page-footer--index-page">

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -62,43 +64,48 @@
               <label class="filters__caption" for="apartment">Аппартаменты</label>
             </div>
           </fieldset>
-          <!-- цена будет хорошо после скринкаста  -->
+
           <fieldset class="filters__column filters__column--prices">
-            <legend class="filters__price">Стоимость в сутки ():</legend>
+            <legend class="filters__price">Стоимость в сутки (P):</legend>
             <div class="price-wrapper">
-              <input class="filters__price filters__price--min" type="text" name="min-price" value="От 0">
-              <input class="filters__price filters__price--max" type="text" name="max-price" value="До 3000">
-            </div>
-            <div class="filters__scale">
-              <div class="filters__band">
-                <!-- здесь будет полоска -->
-              </div>
+              <label class="filters__price filters__price--min" for="min-price">
+                от
+                <input type="text" name="min-price" id="min-price" value="0">
+              </label>
+              <label class="filters__price filters__price--max" for="max-price">
+                до
+                <input type="text" name="max-price" id="max-price" value="3000">
+              </label>
             </div>
             <div class="filters__sliders">
-              <a class="filters__slider filters__slider--left" href="#"></a>
-              <a class="filters__slider filters__slider--right" href="#"></a>
+              <div class="filters__scale">
+                <div class="filters__bar"></div>
+              </div>
+              <div class="filters__slider filters__slider--left" href="#"></div>
+              <div class="filters__slider filters__slider--right" href="#"></div>
             </div>
             <button class="filters__btn" type="submit">Показать</a>
           </fieldset>
+
         </form>
       </div>
       <div class="results__filters clearfix">
         <div class="results__quantity">Найдено: 3</div>
         <ul class="results__list">
-          <li>Сортировка</li>
+          <li>Сортировка:</li>
           <li>
-            <a class="active">По цене:</a>
+            <a class="active">По цене</a>
           </li>
           <li>
-            <a href="#">По типу:</a>
+            <a href="#">По типу</a>
           </li>
           <li>
-            <a href="#">По рейтингу:</a>
+            <a href="#">По рейтингу</a>
           </li>
         </ul>
         <div class="results__arrows">
-          <a class="results__arrow results__arrow--up results__arrow--active" href="#">По возрастанию</a>
-          <a class="results__arrow results__arrow--down" href="#">По убыванию</a>
+          <a class="results__arrow results__arrow--up" href="#">По возрастанию</a>
+          <a class="results__arrow results__arrow--down results__arrow--active" href="#">По убыванию</a>
 
           <link rel="stylesheet" href="css/style.css">
         </div>
@@ -109,17 +116,17 @@
         </div>
         <div class="hotel__description">
           <a class="hotel__title" href="#">Amara resort &amp; spa</a>
-          <div class="hotel__info">
+          <div class="hotel__info clearfix">
             <div class="hotel__house">Гостиница</div>
             <div class="hotel__price">От 3500 р.</div>
           </div>
           <div class="hotel__btns">
-            <a class="hotel__btn hotel__btn--blue" href="#">Подробнее</a>
-            <a class="hotel__btn hotel__btn--brown" href="#">Забронировать</a>
+            <a class="hotel__btn btn-blue" href="#">Подробнее</a>
+            <a class="hotel__btn btn-brown" href="#">Забронировать</a>
           </div>
         </div>
         <div class="hotel__rating">
-          <div class="hotel__stars">
+          <div class="hotel__stars clearfix">
             <div class="hotel__star"></div>
             <div class="hotel__star"></div>
             <div class="hotel__star"></div>
@@ -136,17 +143,17 @@
         </div>
         <div class="hotel__description">
           <a class="hotel__title" href="#">Desert quail inn</a>
-          <div class="hotel__info">
+          <div class="hotel__info clearfix">
             <div class="hotel__house">Мотель</div>
             <div class="hotel__price">От 2000 р.</div>
           </div>
           <div class="hotel__btns">
-            <a class="hotel__btn hotel__btn--blue" href="#">Подробнее</a>
-            <a class="hotel__btn hotel__btn--brown" href="#">Забронировать</a>
+            <a class="hotel__btn btn-blue" href="#">Подробнее</a>
+            <a class="hotel__btn btn-brown" href="#">Забронировать</a>
           </div>
         </div>
         <div class="hotel__rating">
-          <div class="hotel__stars">
+          <div class="hotel__stars clearfix">
             <div class="hotel__star"></div>
             <div class="hotel__star"></div>
           </div>
@@ -161,17 +168,17 @@
         </div>
         <div class="hotel__description">
           <a class="hotel__title" href="#">Villas at poco diablo</a>
-          <div class="hotel__info">
+          <div class="hotel__info clearfix">
             <div class="hotel__house">Аппартаменты</div>
             <div class="hotel__price">От 4000 р.</div>
           </div>
           <div class="hotel__btns">
-            <a class="hotel__btn hotel__btn--blue" href="#">Подробнее</a>
-            <a class="hotel__btn hotel__btn--brown" href="#">Забронировать</a>
+            <a class="hotel__btn btn-blue" href="#">Подробнее</a>
+            <a class="hotel__btn btn-brown" href="#">Забронировать</a>
           </div>
         </div>
         <div class="hotel__rating">
-          <div class="hotel__stars">
+          <div class="hotel__stars clearfix">
             <div class="hotel__star"></div>
             <div class="hotel__star"></div>
             <div class="hotel__star"></div>
