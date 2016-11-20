@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
@@ -66,7 +66,7 @@
           </fieldset>
 
           <fieldset class="filters__column filters__column--prices">
-            <legend class="filters__price">Стоимость в сутки (P):</legend>
+            <legend class="filters__title filters__title--price">Стоимость в сутки (P):</legend>
             <div class="price-wrapper">
               <label class="filters__price filters__price--min" for="min-price">
                 от
@@ -81,10 +81,10 @@
               <div class="filters__scale">
                 <div class="filters__bar"></div>
               </div>
-              <div class="filters__slider filters__slider--left" href="#"></div>
-              <div class="filters__slider filters__slider--right" href="#"></div>
+              <div class="filters__slider filters__slider--left"></div>
+              <div class="filters__slider filters__slider--right"></div>
             </div>
-            <button class="filters__btn" type="submit">Показать</a>
+            <button class="filters__btn" type="submit">Показать</button>
           </fieldset>
 
         </form>
@@ -106,8 +106,6 @@
         <div class="results__arrows">
           <a class="results__arrow results__arrow--up" href="#">По возрастанию</a>
           <a class="results__arrow results__arrow--down results__arrow--active" href="#">По убыванию</a>
-
-          <link rel="stylesheet" href="css/style.css">
         </div>
       </div>
       <section class="hotel clearfix">
