@@ -792,6 +792,14 @@ input::-moz-placeholder {
   background-position: -58px -261px;
 }
 
+.filters__item:disabled + label::before {
+  background-position: -115px -261px;
+}
+
+.filters__item:checked:disabled + label::before {
+  background-position: -163px -261px;
+}
+
 .filters__row {
   padding-bottom: 23px;
 }
