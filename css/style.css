@@ -2,6 +2,18 @@
   from {
     opacity: 0;
   }
+  20% {
+    left: 45%;
+  }
+  40% {
+    left: 55%;
+  }
+  60% {
+    left: 48%;
+  }
+  80% {
+    left: 52%;
+  }
   to {
     opacity: 1;
   }
@@ -10,6 +22,18 @@
 @keyframes show {
   from {
     opacity: 0;
+  }
+  20% {
+    left: 45%;
+  }
+  40% {
+    left: 55%;
+  }
+  60% {
+    left: 48%;
+  }
+  80% {
+    left: 52%;
   }
   to {
     opacity: 1;
@@ -389,8 +413,16 @@ body {
 .form--show {
   -webkit-animation-name: show;
           animation-name: show;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+input::-moz-placeholder {
+  color: #000000;
 }
 
 .booking__search-btn {
